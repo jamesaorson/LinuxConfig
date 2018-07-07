@@ -1,0 +1,8 @@
+#! /bin/bash
+packagesToDelete=$(sudo yaourt -Qdt)
+if [ ! -z "$packagesToDelete" ]; then
+	echo "Packages to remove: $packagesToDelete"
+	sudo yaourt -R "$packagesToDelete"
+else
+	echo "No packages to remove"
+fi

@@ -1,0 +1,22 @@
+[user]
+	name = James Orson
+	email = jamesaorson@gmail.com
+[alias]
+        co = checkout
+        cob = checkout -b
+        com = commit -m
+        st = status
+        pushup = !git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`
+        br = branch
+        hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+        type = cat-file -t
+        dump = cat-file -p
+        rebi = rebase -i
+        del = branch -D
+	clean-house = !git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
+[branch]
+        autosetuprebase = always
+[core]
+        editor = vim
+[init]
+	defaultBranch = main
