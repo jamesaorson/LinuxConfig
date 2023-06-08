@@ -4,7 +4,7 @@
 [alias]
         co = checkout
         cob = checkout -b
-        com = commit -m
+        com = commit --allow-empty -m
         st = status
         pushup = !git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`
         br = branch
@@ -13,7 +13,7 @@
         dump = cat-file -p
         rebi = rebase -i
         del = branch -D
-	clean-house = !git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
+	clean-house = !git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D
 [branch]
         autosetuprebase = always
 [core]
