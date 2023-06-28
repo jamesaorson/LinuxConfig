@@ -1,5 +1,7 @@
 # Linux Config
 
+MOVED TO [SOURCEHUT](https://git.sr.ht/~nixnomad/nixconfig)
+
 ## Important Links
 
 - [Nerd Fonts](https://www.nerdfonts.com/)
